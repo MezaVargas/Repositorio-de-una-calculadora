@@ -1,0 +1,62 @@
+<html>
+<head><title>Calculadora HTML</title></head>
+	<body bgcolor= "# 000000" text= "gold">
+  <style type="text/css">
+    body{
+      font-family: arial black;
+      color:aqua;
+    }
+  </style>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+		<form name="calculator" >
+  			<table width="400" border="1" align="center">
+              <tr>
+                <td colspan="4"><div align="center">
+                  <input type="textfield" name="ans" value="">
+                </div></td>
+              </tr>
+              <tr>
+                <td colspan="3"><div align="center">
+                  <input name="reset" type="reset" value="Reset">
+                </div></td>
+                <td width="38"><input name="button3" type="button" onClick="document.calculator.ans.value+='*'" value="*"></td>
+              </tr>
+              <tr>
+                <td width="48"><input name="button12" type="button" onClick="document.calculator.ans.value+='7'" value="7"></td>
+                <td width="43"><input name="button13" type="button" onClick="document.calculator.ans.value+='8'" value="8"></td>
+                <td width="43"><input name="button14" type="button" onClick="document.calculator.ans.value+='9'" value="9"></td>
+                <td><input name="button" type="button" onClick="document.calculator.ans.value+='+'" value="+"></td>
+              </tr>
+              <tr>
+                <td><input name="button9" type="button" onClick="document.calculator.ans.value+='4'" value="4"></td>
+                <td><input name="button10" type="button" onClick="document.calculator.ans.value+='5'" value="5"></td>
+                <td><input name="button11" type="button" onClick="document.calculator.ans.value+='6'" value="6"></td>
+                <td><input name="button2" type="button" onClick="document.calculator.ans.value+='-'" value="-"></td>
+              </tr>
+              <tr>
+                <td><input name="button6" type="button" onClick="document.calculator.ans.value+='1'" value="1"></td>
+                <td><input name="button7" type="button" onClick="document.calculator.ans.value+='2'" value="2"></td>
+                <td><input name="button8" type="button" onClick="document.calculator.ans.value+='3'" value="3"></td>
+                <td><input name="button15" type="button" onClick="document.calculator.ans.value+='/'" value="/"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><div align="right">
+                  <input name="button4" type="button" onClick="document.calculator.ans.value+='0'" value="0">
+                </div></td>
+                <td><input name="button5" type="button" onClick="document.calculator.ans.value+='.'" value="."></td>
+                <td><input name="button16" type="button" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" value="="></td>
+              </tr>
+            </table>
+
+            <br>
+            <br>
+			<footer id="footer"> 
+  <h1><center>Derechos reservados Jonathan Vargas y Marisol Meza</center></h1>
+  </footer> 
+		</form>
+	</body>
+</html>
